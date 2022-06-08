@@ -26,7 +26,7 @@ const gmapApiKey = import.meta.env.VITE_GMAP_API_KEY;
         <div class="block w-full px-12 md:hidden h-80">
             <iframe class="w-full h-full" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZmQPFwCSbgXMR5e2Ky_7vvTNGjTrVeXw&q=Dafara Clothing blitar">
+                :src="'https://www.google.com/maps/embed/v1/place?key=' + gmapApiKey + '&q=Dafara Clothing blitar'">
             </iframe>
         </div>
     </div>
