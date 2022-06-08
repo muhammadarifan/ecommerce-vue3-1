@@ -1,5 +1,5 @@
 {
-  "name": "polinema-ecommerce-vue3",
+  "name": "ecommerce-vue3",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite --host",
