@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import InputVue from './Input.vue';
 import TextareaVue from './Textarea.vue';
+
+const gmapApiKey = import.meta.env.VITE_GMAP_API_KEY;
 </script>
 
 <template>
@@ -8,7 +10,7 @@ import TextareaVue from './Textarea.vue';
         <div class="hidden w-1/2 h-screen bg-blue-100 md:block">
             <iframe class="w-full h-full" width="600" height="450" style="border:0" loading="lazy" allowfullscreen
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZmQPFwCSbgXMR5e2Ky_7vvTNGjTrVeXw&q=Dafara Clothing blitar">
+                :src="'https://www.google.com/maps/embed/v1/place?key=' + gmapApiKey + '&q=Dafara Clothing blitar'">
             </iframe>
         </div>
         <div class="flex flex-col items-center justify-center w-full p-12 md:w-1/2">
